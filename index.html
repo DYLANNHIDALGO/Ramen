@@ -12,14 +12,15 @@
 
   <canvas id="canvas"></canvas>
 
-  <div class="controls">
-    <label>Velocidad</label>
+  <button id="toggle-controls">⚙️ Ajustes</button>
+  <div class="controls" id="controls-panel">
+    <label>⚡Velocidad</label>
     <input type="range" id="speed" min="10" max="200" value="60" />
 
-    <label>Color</label>
+    <label>🎨Color</label>
     <input type="color" id="color" value="#ff69b4" />
 
-    <label>Fuente</label>
+    <label> 𖹭 Fuente</label>
     <select id="font">
       <option value="Great Vibes">Great Vibes</option>
       <option value="Comic Neue">Comic Neue</option>
@@ -27,20 +28,20 @@
       <option value="Courier New">Courier New</option>
     </select>
 
-    <label>Tipo de caída</label>
+    <label>📌Tipo de caída</label>
     <select id="fallType">
-      <option value="heart">Corazón</option>
-      <option value="wave">Onda</option>
-      <option value="zigzag">Zigzag</option>
-      <option value="spiral">Espiral</option>
-      <option value="random">Aleatorio</option>
-      <option value="linear">Línea recta</option>
+      <option value="heart">♥️ Corazón</option>
+      <option value="wave">〰️ Onda</option>
+      <option value="zigzag">⌇ Zigzag</option>
+      <option value="spiral">𖦹 Espiral</option>
+      <option value="random">🔀 Aleatorio</option>
+      <option value="linear">⬇️ Línea recta</option>
     </select>
 
-    <label>Tamaño</label>
+    <label>↔️ Tamaño</label>
     <input type="range" id="fontSize" min="10" max="100" value="30" />
 
-    <label>Fondo personalizado</label>
+    <label>📷 Fondo personalizado</label>
     <input type="file" id="bgImageInput" accept="image/*" />
   </div>
 
