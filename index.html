@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matrix Love</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img id="background-image" />
+
+  <canvas id="canvas"></canvas>
+
+  <div class="controls">
+    <label>Velocidad</label>
+    <input type="range" id="speed" min="10" max="200" value="60" />
+
+    <label>Color</label>
+    <input type="color" id="color" value="#ff69b4" />
+
+    <label>Fuente</label>
+    <select id="font">
+      <option value="Great Vibes">Great Vibes</option>
+      <option value="Comic Neue">Comic Neue</option>
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+
+    <label>Tipo de caída</label>
+    <select id="fallType">
+      <option value="heart">Corazón</option>
+      <option value="wave">Onda</option>
+      <option value="zigzag">Zigzag</option>
+      <option value="spiral">Espiral</option>
+      <option value="random">Aleatorio</option>
+      <option value="linear">Línea recta</option>
+    </select>
+
+    <label>Tamaño</label>
+    <input type="range" id="fontSize" min="10" max="100" value="30" />
+
+    <label>Fondo personalizado</label>
+    <input type="file" id="bgImageInput" accept="image/*" />
+  </div>
+
+  <div class="message" id="message">💖 ¡TE AMO B♡9! 💖</div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="audio/romantic.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
