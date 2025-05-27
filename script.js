@@ -1,3 +1,9 @@
+// Mostrar/ocultar el menú de controles
+document.getElementById('toggle-controls').addEventListener('click', () => {
+  const panel = document.getElementById('controls-panel');
+  panel.style.display = panel.style.display === 'none' || panel.style.display === '' ? 'block' : 'none';
+});
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const bgImage = document.getElementById('background-image');
